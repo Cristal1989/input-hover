@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input / hover</title>
+  </head>
+  <body>
+    <!-- =============== form ===============  -->
+    <h1>form</h1>
+    <!-- get / put - отправить или получить -->
+    <form action="" method="get" enctype="multipart/form-data"></form>
+
+    <!-- input - поле для воода данных  -->
+    <div>
+      <!-- placeholder - текст внутри поля -->
+      <input placeholder="name" type="text" name="username" value="" />
+    </div>
+    <br />
+    <div>
+      <!-- tel - поле для ввода номера телефона -->
+      <input placeholder="number" type="tel" name="username" value="" />
+    </div>
+    <br />
+    <div>
+      <input placeholder="pass" type="password" name="userpass" />
+    </div>
+    <br />
+
+    <!-- ============== radio =========== -->
+    <div>
+      <!-- radio - выбор из списка -->
+      <p>
+        <input type="radio" name="beer" value="lagger" />
+        light
+      </p>
+      <p>
+        <!-- checked - выбор по умолчанию -->
+        <input checked type="radio" name="beer" value="dark" />
+        dark
+      </p>
+      <p>
+        <input type="radio" name="beer" value="yelow" />
+        yelow
+      </p>
+      <p>
+        <input type="radio" name="beer" value="green" />
+        green
+      </p>
+    </div>
+
+    <br />
+
+    <div>
+      <p>
+        <input type="radio" name="beer2" value="lagger" />
+        light
+      </p>
+      <p>
+        <input type="radio" name="beer2" value="dark" />
+        dark
+      </p>
+      <p>
+        <input type="radio" name="beer2" value="yelow" />
+        yelow
+      </p>
+      <p>
+        <input checked type="radio" name="beer2" value="green" />
+        green
+      </p>
+    </div>
+    <br />
+    <!-- ================ checkbox ================= -->
+    <div>
+      <!-- checkbox - множественный выбор -->
+      <p>
+        <input type="checkbox" name="car" value="yes" />
+        Наличие авто
+      </p>
+      <p>
+        <input checked type="checkbox" name="car2" value="yes" />
+        Наличие авто 2
+      </p>
+      <p>
+        <input type="checkbox" name="car3" value="yes" />
+        Наличие авто 3
+      </p>
+      <p>
+        <input type="checkbox" name="car4" value="yes" />
+        Наличие авто 4
+      </p>
+    </div>
+    <br />
+
+    <!-- ============ file =========== -->
+    <!-- file - выбор файла и отправка на сервер -->
+    <div>
+      <p>
+        <input type="file" name="foto" />
+      </p>
+    </div>
+    <br />
+
+    <!-- ============= textarea =========== -->
+    <div>
+      <!-- textarea - поле для ввода текста -->
+      <textarea placeholder="text" name="text"></textarea>
+    </div>
+    <br />
+    <!-- ==============  select  ==============-->
+    <div>
+      <!-- select - выбор из всплывающего списка -->
+      <!-- multiple - многочисленный выбор через ctrl -->
+      <select name="color" id="#">
+        <option value="red">red</option>
+        <option selected value="green">green</option>
+        <option value="yelow">yelow</option>
+      </select>
+    </div>
+    <br />
+    <!-- ==============  button  ==============-->
+    <div>
+      <!-- type="submit" - сразу отправка на сервер -->
+      <!-- type="reset" - очистит форму -->
+      <button type="submit">send</button>
+    </div>
+  </body>
+</html>
